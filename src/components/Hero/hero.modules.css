@@ -1,0 +1,67 @@
+h1 {
+  color: #fff;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.movies {
+  margin-left: 3%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
+
+.movies img {
+  width: 239.401px;
+  height: 380.559px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.movie2 {
+  display: none;
+  visibility: hidden;
+}
+
+.movie_title {
+  width: 90%;
+  color: #fff;
+}
+
+.movie_trailer {
+  color: #f2f60f;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn_parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white_btn {
+  width: 200px;
+  height: 71px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  margin: 40px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background: #fff;
+    color: #1e2538;
+  }
+}

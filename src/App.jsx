@@ -13,24 +13,6 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-  const [movie, setMovie] = useState([]);
-
-  useEffect(() => {
-    const options = {
-      method: "GET",
-      headers: {
-        accept: "application/json",
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZGRiNGNjMWQyMmMwMDMzNGEzMmVjOWE3M2M1MDQyNSIsInN1YiI6IjY1YTJjMGJmYTM0OTExMDEyZDA5ZGZjMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TCLNNugXI4qAwP0TEIRM9pfJMWsRbBeMElm-yfl30bg",
-      },
-    };
-
-    fetch("https://api.themoviedb.org/3/movie/111/images", options)
-      .then((response) => response.json())
-      .then((response) => console.log(response))
-      .catch((err) => console.error(err));
-  }, []);
-
   return (
     <div className="container">
       <Navbar />
